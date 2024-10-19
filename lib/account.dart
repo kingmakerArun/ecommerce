@@ -91,8 +91,8 @@ class _AccountState extends State<Account> {
                         if (_formKey.currentState?.validate() ?? false) {
                           final email = _emailController.text;
                           final password = _passwordController.text;
-                        Provider.of<UserProvider>(context, listen: false)
-                              .login(email, password);
+                        // Provider.of<UserProvider>(context, listen: false)
+                        //       .login(email, password);
                         Navigator.push(context,MaterialPageRoute(builder: (context) => const Home()),);
                         }
                       },
