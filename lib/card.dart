@@ -127,7 +127,7 @@ class CartPage extends StatelessWidget {
                 Row(
                   children: [
                     const Text('Shipping Cost:', style: TextStyle(fontSize: 18)),
-                    const SizedBox(width: 190),
+                    const SizedBox(width: 180),
                     Text('₹ ${shippingCost.toStringAsFixed(2)}', style: const TextStyle(fontSize: 18)),
                   ],
                 ),
