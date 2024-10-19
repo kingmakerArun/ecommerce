@@ -30,7 +30,7 @@ class Shipping extends StatelessWidget {
                 final item = cartItems.keys.elementAt(index);
                 final quantity = cartItems[item]!;
                 final price = double.parse(item.price.replaceAll('₹ ', '').replaceAll(',', ''));
-                final total = price * quantity;
+                final total = price * quantity+100;
                 return Card(
                   child: Row(
                     children: [
